@@ -1,0 +1,102 @@
+<!---Nombre: index22.html
+Title: Unificando celdas con todo!
+Título: Unificando celdas con todo!
+Copiar y pegar todo el contenido del ejercicio 20
+Establecer el ancho de la tabla en 1200px
+Establecer el borde en 1
+Establecer el margen exterior de las celdas en 0 pixeles
+Copiar el contenido del footer al body de la tabla (dejar vacío el footer)
+Crear una celda que unifique el footer y agregar el contenido 'Aguante Rick & Morty' (tiene que quedar una celda que valga por 6)
+Unificar los valores de la primer columna del body de la tabla (No. (serie)) para que se ve una sola celda en toda la columa, es decir que tiene que valer por 5 celdas.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Unificando celdas con todo!</title>
+    <style>
+        td, th{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1> Unificando celdas con todo!</h1>
+    <table style="width: 1200px;border: 1px solid black;border-collapse: collapse;">
+        
+        <thead>
+            <tr>
+                <th style="background: white;">Nº serie</th>
+                <th style="background: grey;">Nº temporada</th>
+                <th>Titulo</th>
+                <th>Director</th>
+                <th>Escritor/a (es/as)</th>
+                <th style="background: red;">Audiencia (en millones)</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+                <td style="background: white; text-align: center; " rowspan="5" >
+                     <div>1</div>
+                     <div>2</div>
+                     <div>3</div>
+                     <div>4</div>
+                     <div>5</div>
+                </td>
+                <td style="background: grey;">1</td>
+                <td>Pilot Buscando las semillas (LA)</td>
+                <td>Justin Roiland</td>
+                <td>Dan Harmon y Justin Roiland</td>
+                <td style="background: red;">1.10</td>
+            </tr>
+           
+            <tr>
+             
+                <td style="background: grey;">2</td>
+                <td>Lawnmower Dog Invasión canina (LA)</td>
+                <td>John Rice</td>
+                <td>Ryan Ridley</td>
+                <td style="background: red;">1.51</td>
+            </tr>
+
+            <tr>
+                
+                <td style="background: grey;">3</td>
+                <td>Anatomy Park Parque anatómico (LA)</td>
+                <td>John Rice</td>
+                <td>Eric Acosta y Wade Randolph</td>
+                <td style="background: red;">1.30</td>
+            </tr>
+              
+            <tr>
+              
+                <td style="background: grey;">4</td>
+                <td> M. Night Shaym-Aliens! La simulación alienígena (LA)</td>
+                <td>Jeff Myers</td>
+                <td>Tom Kauffman</td>
+                <td style="background: red;">1.32</td>
+            </tr>
+
+            <tr>
+             
+                <td style="background: grey;">5</td>
+                <td>Meeseeks and Destroy Meeseeks destructores (LA)</td>
+                <td>Bryan Newton</td>
+                <td>Ryan Ridley</td>
+                <td style="background: red;">1.61</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+          <td colspan="6" style="text-align: center;"> 
+              Aguante Rick & Morty 
+            </td>
+        </tfoot>
+    </table>
+</body>
+</html>
